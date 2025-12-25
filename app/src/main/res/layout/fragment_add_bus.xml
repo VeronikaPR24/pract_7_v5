@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBusFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добавить автобус"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_orange"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Номер автобуса"
+            android:textColor="@color/orange"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etBusNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите номер автобуса"
+            android:inputType="number"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Модель"
+            android:textColor="@color/orange"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите модель автобуса"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Дата покупки"
+            android:textColor="@color/orange"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etPurchaseDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="01.01.2023"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Начальная цена"
+            android:textColor="@color/orange"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etInitialPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите цену"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Состояние"
+            android:textColor="@color/orange"
+            android:layout_marginBottom="4dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerCondition"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Выберите состояние"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Пробег"
+            android:textColor="@color/orange"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etMileage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите пробег"
+            android:inputType="number"
+            android:layout_marginBottom="20dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сохранить"
+            android:background="@drawable/btn"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+</ScrollView>

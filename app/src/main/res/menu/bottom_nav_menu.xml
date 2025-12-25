@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Главная" />
+
+    <item
+        android:id="@+id/busFragment"
+        android:title="Автобусы" />
+
+    <item
+        android:id="@+id/routeFragment"
+        android:title="Маршруты" />
+
+    <item
+        android:id="@+id/driverFragment"
+        android:title="Водители" />
+
+</menu>

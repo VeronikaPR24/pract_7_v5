@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Регистрация"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/dark_orange" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ваше имя"
+            android:textSize="16dp"
+            android:textColor="@color/orange"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите имя"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="16dp"
+            android:textColor="@color/orange"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите почту"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Логин"
+            android:textSize="16dp"
+            android:textColor="@color/orange"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите логин"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Пароль"
+            android:textSize="16dp"
+            android:textColor="@color/orange"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:hint="Введите пароль"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Выберите роль"
+            android:textSize="16dp"
+            android:textColor="@color/orange"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rgRole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp">
+
+            <RadioButton
+                android:id="@+id/rbPassenger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Пассажир"
+                android:checked="true"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbDriver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Водитель"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbDispatcher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Диспетчер"
+                android:padding="8dp" />
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Зарегистрироваться"
+            android:textSize="18dp"
+            android:padding="16dp"
+            android:background="@drawable/btn"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>

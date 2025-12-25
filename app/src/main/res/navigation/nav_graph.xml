@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.bignerdranch.android.autopark.HomeFragment"
+        android:label="Главная"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_homeFragment_to_routeFragment"
+            app:destination="@id/routeFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/busFragment"
+        android:name="com.bignerdranch.android.autopark.BusFragment"
+        android:label="Автобусы"
+        tools:layout="@layout/fragment_bus">
+
+        <action
+            android:id="@+id/action_busFragment_to_addBusFragment"
+            app:destination="@id/addBusFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/routeFragment"
+        android:name="com.bignerdranch.android.autopark.RouteFragment"
+        android:label="Маршруты"
+        tools:layout="@layout/fragment_route">
+
+        <action
+            android:id="@+id/action_routeFragment_to_addRouteFragment"
+            app:destination="@id/addRouteFragment" />
+
+        <action
+            android:id="@+id/action_routeFragment_to_editRouteFragment"
+            app:destination="@id/editRouteFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/driverFragment"
+        android:name="com.bignerdranch.android.autopark.DriverFragment"
+        android:label="Водители"
+        tools:layout="@layout/fragment_driver" />
+
+    <fragment
+        android:id="@+id/addBusFragment"
+        android:name="com.bignerdranch.android.autopark.AddBusFragment"
+        android:label="Добавить автобус"
+        tools:layout="@layout/fragment_add_bus" />
+
+    <fragment
+        android:id="@+id/addRouteFragment"
+        android:name="com.bignerdranch.android.autopark.AddRouteFragment"
+        android:label="Добавить маршрут"
+        tools:layout="@layout/fragment_add_route" />
+
+    <fragment
+        android:id="@+id/editRouteFragment"
+        android:name="com.bignerdranch.android.autopark.EditRouteFragment"
+        android:label="Редактировать маршрут"
+        tools:layout="@layout/fragment_add_route" />
+
+</navigation>
